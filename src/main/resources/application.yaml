@@ -1,0 +1,17 @@
+server:
+  port: 8086
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommerce_order_db
+    username: yourUsername
+    password: yourPassword
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  application:
+    name: ecommerce-order-service
